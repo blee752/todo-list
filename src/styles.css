@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
 }
 
+
 .sidebar {
     background-color: #fafafa;
     grid-row: 2 / 4;
@@ -35,6 +36,9 @@ body {
     min-height: min-content;
 }
 
+/* Header css */
+
+/* Left header css */
 .nav-ui {
     display: flex;
     padding: 0px 0px 0px 10px;
@@ -82,6 +86,28 @@ body {
     
 }
 
+/* Right header css */
+
+.user-ui {
+    display: flex;
+}
+
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+.user-container>button {
+    background-color: transparent;
+    border: 0;
+}
+
+.user-container>button>img {
+    height: 2rem;
+}
 
 .content {
     grid-row: 2 / 4;

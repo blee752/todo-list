@@ -125,12 +125,20 @@ body {
     font-size: 1.7rem;
 }
 
+.sidebar-Homebtn:hover, .sidebar-Todaybtn:hover, .sidebar-Weekbtn:hover, .projects-item:hover{
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+
+
 .projects-listcontainer {
     margin-left: 1rem;
     margin-top: 5px;
     height: 7em;
     overflow: auto;
 }
+
+
 
 .projects-item {
     list-style: none;

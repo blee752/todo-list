@@ -12,6 +12,7 @@ body {
     margin: 0;
 }
 
+/* Header css */
 .header {
     background-color: #db4c3f;
     grid-column: 1/4;
@@ -21,22 +22,6 @@ body {
 }
 
 
-.sidebar {
-    background-color: #fafafa;
-    grid-row: 2 / 4;
-    padding-left: 10px;
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    row-gap: 20px;
-
-    position: sticky;
-    top: 0;
-    left: 0;
-    max-height: 100%;
-    min-height: min-content;
-}
-
-/* Header css */
 
 /* Left header css */
 .nav-ui {
@@ -108,6 +93,52 @@ body {
 .user-container>button>img {
     height: 2rem;
 }
+
+
+/* Sidebar css */
+.sidebar {
+    background-color: #fafafa;
+    grid-row: 2 / 4;
+    padding-left: 10px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    row-gap: 20px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    min-height: min-content;
+}
+
+.sidebar-list {
+    margin: 50px auto;
+    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-Homebtn,.sidebar-Todaybtn ,.sidebar-Weekbtn, .projects-container{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.projects-listcontainer {
+    margin-left: 1rem;
+    margin-top: 5px;
+    height: 7em;
+    overflow: auto;
+}
+
+.projects-item {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 10px;
+}
+
 
 .content {
     grid-row: 2 / 4;

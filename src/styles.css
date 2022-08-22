@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 0.25fr 3fr 1fr;;
     margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 2px;
 }
 
 /* Header css */
@@ -103,12 +111,8 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr;
     row-gap: 20px;
-
-    position: sticky;
-    top: 0;
-    left: 0;
-    max-height: 100%;
-    min-height: min-content;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .sidebar-list {
@@ -147,8 +151,72 @@ body {
     padding: 10px;
 }
 
-
+/* Content css */
 .content {
     grid-row: 2 / 4;
     background-color: #fff;
+    height: 100vh;
+    padding: 50px 40px;
+    overflow-y: scroll;
+
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-info-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.divider {
+    height: 1px;
+    background-color: #aaaaaa;
+    margin: 20px 0px;
+}
+
+.task-container {
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #aaaaaa solid;
+    padding: 15px;
+    margin: 12px 0px;
+}
+
+.todo-detail {
+    padding: 15px;
+    display: flex;
+    border: 1px #aaaaaa solid;
+    gap: 2em;
+}
+
+.todo-left {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.todo-right>button {
+    border: 0px;
+    background-color: transparent;
+} 
+
+
+.col {
+    flex: 1 auto;
+}
+
+.col > div:first-child {
+    padding-bottom: 10px;
+}
+
+.col > div:nth-child(2) {
+    padding-top: 10px;
 }
